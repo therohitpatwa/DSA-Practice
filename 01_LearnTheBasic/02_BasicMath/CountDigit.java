@@ -19,3 +19,4 @@ public class CountDigit {
          System.out.println(cnt);
     }
 }
+

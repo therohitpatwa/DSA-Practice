@@ -229,14 +229,17 @@ class Pattern {
       
     }
       public static void pattern16(int n) {
+        char ch='A';
         for(int i=0;i<n;i++)
         {
+          
            for(int j=0;j<i+1;j++)
            {
-               char ch=(char)('A'+i);
+               
                System.out.print(ch);
            }
            System.out.println();
+            ch=(char)(ch+1);
         }
       
     }
@@ -271,13 +274,116 @@ class Pattern {
       
     }
      public static void pattern18(int n) {
-
+         for(int i=0;i<n;i++)
+         {
+            char ch=(char) ('A'+ (char)(n-i-1));
+            for(int j=0;j<i+1;j++)
+            {
+                System.out.print(ch++);
+            }
+            System.out.println();
+         }
        
     }
+        public static void pattern19(int n) {
+         for(int i=0;i<n;i++)
+         {
+            for(int j=0;j<n-i;j++)
+            {
+               System.out.print("*");
+            }
+            for(int j=0;j<2*i;j++)
+            {
+                System.out.print(" ");
+            }
+             for(int j=0;j<n-i;j++)
+            {
+                 System.out.print("*");
+            }
+            System.out.println();
+         } 
+         for(int i=0;i<n;i++)
+         {
+            for(int j=0;j<i+1;j++)
+            {
+               System.out.print("*");
+            }
+            for(int j=0;j<2*n-2*(i+1);j++)
+            {
+                System.out.print(" ");
+            }
+             for(int j=0;j<i+1;j++)
+            {
+                 System.out.print("*");
+            }
+            System.out.println();
+         }
+       
+    }
+
+    public static void pattern20(int n) {
+         for(int i=0;i<n;i++)
+         {
+            for(int j=0;j<i+1;j++)
+            {
+               System.out.print("*");
+            }
+            for(int j=0;j<2*n-2*(i+1);j++)
+            {
+                System.out.print(" ");
+            }
+             for(int j=0;j<i+1;j++)
+            {
+                 System.out.print("*");
+            }
+            System.out.println();
+         } 
+         for(int i=0;i<n-1;i++)
+         {
+            for(int j=0;j<n-i-1;j++)
+            {
+               System.out.print("*");
+            }
+            for(int j=0;j<2*(i+1);j++)
+            {
+                System.out.print(" ");
+            }
+             for(int j=0;j<n-i-1;j++)
+            {
+                 System.out.print("*");
+            }
+            System.out.println();
+         }
+       
+    }
+         public static void pattern21(int n) {
+         for(int i=0;i<n;i++)
+         {
+             if(i==0 || i==n-1)
+             {
+                for(int j=0;j<n;j++)
+                {
+                    System.out.print("*");
+                }
+             }
+             else
+             {
+                System.out.print("*");
+                for(int j=0;j<n-2;j++)
+                {
+                    System.out.print(" ");
+                }
+                System.err.print("*");
+             }
+             System.err.println(" ");
+         }
+       
+    }
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        pattern18(n);
+        pattern21(n);
         sc.close();
 
     }

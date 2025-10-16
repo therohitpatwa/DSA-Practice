@@ -1,3 +1,4 @@
+
 import java.util.*;
 public class MoveZeroToEnd {
    public static void main(String[] args) {

@@ -1,3 +1,4 @@
+
 import java.util.*;
 public class LeftRotationBy1Place {
     public static void main(String[] args) {

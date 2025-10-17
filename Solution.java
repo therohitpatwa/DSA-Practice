@@ -26,6 +26,7 @@ class Solution {
               arr[left]=arr[right];
               arr[right]=temp;
               fun(arr, left+1, right-1);
+
           }
    }
 

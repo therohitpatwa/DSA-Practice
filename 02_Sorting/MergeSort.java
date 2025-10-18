@@ -8,6 +8,7 @@ public class MergeSort {
         int n = sc.nextInt();
         int arr[] = new int[n];
         for (int i = 0; i < n; i++) {
+            
             arr[i] = sc.nextInt();
         }
         int low = 0;
@@ -27,6 +28,7 @@ public class MergeSort {
         mergeSort(arr, low, mid);
         mergeSort(arr, mid + 1, high);
         merge(arr, low, mid, high);
+       
     }
 
     public static void merge(int[] arr, int low,int mid,int high) {
@@ -48,6 +50,7 @@ public class MergeSort {
                 right++;
                 i++;
             }
+
         }
         while(left<=mid)
         {

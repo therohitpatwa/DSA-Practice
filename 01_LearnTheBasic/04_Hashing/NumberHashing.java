@@ -1,3 +1,5 @@
+//01
+
 
 import java.util.Scanner;
 
@@ -11,12 +13,12 @@ public class NumberHashing {
             arr[i] = sc.nextInt();
         }
 
-        int hash[] = new int[12];
+        int hash[] = new int[13];  //atmost no till 12
         for (int i = 0; i < n; i++) {
             hash[arr[i]] += 1;
         }
 
-        int q = sc.nextInt();
+        int q = sc.nextInt();            
         for (int i = 1; i <= q; i++) {
             int num = sc.nextInt();
             System.out.println(hash[num]);
@@ -25,3 +27,6 @@ public class NumberHashing {
 
     }
 }
+
+
+//IT IS LIMITED TO SIZE OF INT

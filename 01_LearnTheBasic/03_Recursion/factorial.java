@@ -1,24 +1,24 @@
 //05
 
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 
 
-public class factorial {
-    public static void main(String[] args) {
-        int n;
-        Scanner sc=new Scanner(System.in);
-        n=sc.nextInt();
-        System.out.println(fun(n));
-    }
-    public static int  fun(int n)
-    {
-        int s;
-        if(n==0)
-        return 1;
+// public class factorial {
+//     public static void main(String[] args) {
+//         int n;
+//         Scanner sc=new Scanner(System.in);
+//         n=sc.nextInt();
+//         System.out.println(fun(n));
+//     }
+//     public static int  fun(int n)
+//     {
+//         int s;
+//         if(n==0)
+//         return 1;
 
-       s=n*fun(n-1);
-       return s;
-    }
-}
+//        s=n*fun(n-1);
+//        return s;
+//     }
+// }

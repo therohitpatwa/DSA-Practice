@@ -217,7 +217,8 @@
 //         }
       
 //     }
-//        public static void pattern15(int n) {
+//        public static void pattern15(int n)
+//       {
 //         for(int i=n-1;i>=0;i--)
 //         {
 //            for(char ch='A';ch<='A'+i;ch++)
@@ -241,7 +242,6 @@
 //            System.out.println();
 //             ch=(char)(ch+1);
 //         }
-      
 //     }
 
 //        public static void pattern17(int n) {
